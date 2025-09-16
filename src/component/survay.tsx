@@ -221,7 +221,7 @@ const Survay = () => {
         </section>
       </div>
 
-      <div className="md:w-1/2 p-4 flex flex-col items-center justify-between overflow-x-hidden min-h-[470px]">
+      <div className="md:w-1/2 p-4 flex flex-col items-center justify-between overflow-hidden">
         <AnimatePresence custom={direction} mode="wait">
           <motion.div key={i} custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.5 }} className="w-full flex flex-col items-center">
             <div className="relative inline-block overflow-hidden mb-10">
