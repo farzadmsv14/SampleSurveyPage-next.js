@@ -201,8 +201,8 @@ const Survay = () => {
   }
 
   return (
-    <div className="min-h-screen flex justify-between flex-col-reverse md:flex-row">
-      <div className="md:w-1/2 p-4">
+    <div className="min-h-screen flex justify-between flex-col-reverse lg:flex-row">
+      <div className="lg:w-1/2 p-4">
         <section className="flex flex-col justify-between w-full h-full">
           <div className="flex items-center justify-center w-full">
             <div className="hidden lg:block">
@@ -221,7 +221,7 @@ const Survay = () => {
         </section>
       </div>
 
-      <div className="md:w-1/2 p-4 flex flex-col items-center justify-between overflow-hidden">
+      <div className="lg:w-1/2 p-4 flex flex-col items-center justify-between overflow-hidden">
         <AnimatePresence custom={direction} mode="wait">
           <motion.div key={i} custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.5 }} className="w-full flex flex-col items-center">
             <div className="relative inline-block overflow-hidden mb-10">
