@@ -25,7 +25,7 @@ const RatingQuestion = ({ type, maxRate, value, onChange }: RatingQuestionProps)
   return (
     <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
       {Array.from({ length: maxRate }, (_, index) => index + 1).map((star) => (
-        <button key={star} type="button" onClick={() => onChange(star)} className={`transition-colors text-4xl sm:text-5xl md:text-6xl lg:text-7xl ${star <= value ? "text-red-500" : "text-gray-300"}`}>
+        <button key={star} type="button" onClick={() => onChange(star)} className={`transition-colors text-6xl sm:text-6xl md:text-6xl lg:text-7xl ${star <= value ? "text-red-500" : "text-gray-300"}`}>
           ★
         </button>
       ))}

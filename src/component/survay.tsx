@@ -135,7 +135,6 @@ const Survay = () => {
       };
 
       // await submitAnswer(payload);
-
       console.log(payload);
 
       if (currentStep < totalSteps) {
@@ -202,7 +201,7 @@ const Survay = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col-reverse md:flex-row">
+    <div className="min-h-screen flex justify-between flex-col-reverse md:flex-row">
       <div className="md:w-1/2 p-4">
         <section className="flex flex-col justify-between w-full h-full">
           <div className="flex items-center justify-center w-full">
@@ -222,12 +221,12 @@ const Survay = () => {
         </section>
       </div>
 
-      <div className="md:w-1/2 p-4 flex flex-col items-center justify-between overflow-x-hidden">
+      <div className="md:w-1/2 p-4 flex flex-col items-center justify-between overflow-x-hidden min-h-[470px]">
         <AnimatePresence custom={direction} mode="wait">
           <motion.div key={i} custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.5 }} className="w-full flex flex-col items-center">
             <div className="relative inline-block overflow-hidden mb-10">
-              <img className="mb-10" src="image/QBG.png" alt="question photo" />
-              <motion.span dir="rtl" className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black font-bold text-xl sm:text-2xl w-80 text-center">
+              <img src="image/QBG.png" alt="question photo" />
+              <motion.span dir="rtl" className="absolute top-[41%] left-[54%] -translate-x-1/2 -translate-y-1/2 text-black font-bold text-xl sm:text-2xl w-78 text-center">
                 {currentQuestion?.text}
               </motion.span>
             </div>

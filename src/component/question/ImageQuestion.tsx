@@ -3,7 +3,7 @@ import { env } from "process";
 
 const ImageQuestion = ({ images, selected, onChange }: ImageQuestionProps) => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex justify-center flex-wrap gap-4">
       {images.map((image, index) => (
         <label key={index} className={`relative border-2 rounded-lg p-1 cursor-pointer overflow-hidden ${selected === image.imageId ? "border-red-500 shadow-lg" : "border-gray-300"} hover:border-red-400 hover:shadow-md transition-all`}>
           <input type="radio" name="imageOption" value={image.imageId} className="hidden" onChange={() => onChange(image.imageId!)} />
